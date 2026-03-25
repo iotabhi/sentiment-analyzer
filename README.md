@@ -1,30 +1,57 @@
-# Sentiment Analyzer
+# 🎭 Sentiment Analyzer
 
-An NLP-powered web app that detects sentiment (positive/negative) in any text using DistilBERT.
+![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)
+![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20Transformers-DistilBERT-yellow)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-## Features
-- Single text analysis with confidence score
-- Batch CSV upload to analyze 100s of reviews at once
-- Downloadable results CSV
+An NLP-powered web application that leverages a fine-tuned **DistilBERT** model to perform high-accuracy sentiment analysis on text data. Perfect for analyzing customer reviews, social media comments, or feedback at scale.
 
-## Tech Stack
-- Python
-- HuggingFace Transformers (DistilBERT)
-- Streamlit
-- Pandas
+## 🚀 Key Features
+* **Real-time Analysis:** Input any text and get instant sentiment classification (Positive/Negative).
+* **Confidence Scoring:** View the model's probability score for each prediction to understand its certainty.
+* **Batch Processing:** Upload a `.csv` file to analyze hundreds of reviews simultaneously.
+* **Data Export:** Download your processed results as a new CSV for further data science workflows.
 
-## How to Run Locally
-1. Clone the repo
-   git clone https://github.com/iotabhi/sentiment-analyzer.git
+## 🛠️ Tech Stack
+* **Language:** Python
+* **Model:** HuggingFace Transformers (`distilbert-base-uncased-finetuned-sst-2-english`)
+* **Frontend:** Streamlit
+* **Data Handling:** Pandas
+* **Backend:** PyTorch
 
-2. Install dependencies
-   pip install transformers streamlit torch pandas
+## 📦 Installation & Setup
 
-3. Run
-   streamlit run streamlit_app.py
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/iotabhi/sentiment-analyzer.git](https://github.com/iotabhi/sentiment-analyzer.git)
+    cd sentiment-analyzer
+    ```
 
-## Model
-DistilBERT fine-tuned on SST-2 dataset for binary sentiment classification.
+2.  **Install dependencies:**
+    ```bash
+    pip install transformers streamlit torch pandas
+    ```
 
-## Author
-Abhilasha Manjeet
+3.  **Launch the App:**
+    ```bash
+    streamlit run streamlit_app.py
+    ```
+
+## 🧠 Model Architecture
+This project uses **DistilBERT**, a distilled version of BERT that is 40% smaller and 60% faster while retaining 97% of BERT's performance. It has been specifically fine-tuned on the **SST-2 (Stanford Sentiment Treebank)** dataset for binary classification, making it highly efficient for production-level web apps.
+
+## 📈 Future Roadmap
+- [ ] Support for Multi-class classification (Neutral sentiment).
+- [ ] Interactive Dashboard using Matplotlib/Seaborn for batch data visualization.
+- [ ] Deployment to Hugging Face Spaces or Streamlit Cloud.
+- [ ] Integration with Twitter/X API for real-time sentiment tracking.
+
+## ✍️ Author
+**Abhilasha Manjeet**
+* B.Tech CSE Student @ NIST University
+* [GitHub](https://github.com/iotabhi)
+* [LinkedIn](https://www.linkedin.com/in/abhilashamanjeet)
+
+---
+*Developed as part of my portfolio in AI/ML and Web Development.*
